@@ -69,10 +69,36 @@ main{
 padding: 0px;
 }
 .nav-links{
-display: none;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffff;
+    flex-direction: column;
+    justify-content: space-around;
+    clip-path: circle(100px at 90% -15%);
+    pointer-events: none;
+    transition: 1s ease-out;
+    }
+    nav.active .nav-links{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .bx-menu{
+        cursor: pointer;
+        z-index: 1;
+    }
+    .bxs-user{
+    color: #ED1B24;
+    }
+    .navbar-inner{
+        justify-content: space-between;
+    }
+
 .navbar-inner{
 justify-content: space-between;
+margin-bottom: 10px;
 }
 .cards-inner{
 display: flex;
@@ -87,7 +113,16 @@ border-bottom: 3px solid rgba(0, 0, 0, 0.064);
 padding-bottom: 10px;
 }
 p{
-    font-size: 14px;
+    font-size: 16px;
+   
+}
+.price{
+
+    font-weight: bold;
+}
+h3{
+    font-size: 26px;
+    font-weight: 400;
 }
 .card img{
 width: 200px;
@@ -110,4 +145,50 @@ width: 200px;
             width: 80px;
             height: 50px;
         }
+        span{
+
+            color: green;
+        }
+        .find{
+            text-align: center;
+            margin: 10px;
+        }
+        .find input{
+            border-radius: 26px;
+            border: 1px solid #ed1b2683;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.247);
+        }
+        .find ::placeholder{
+            text-align: center;
+        }
+        .btn-login{
+    display: none;
+}
+.nav-links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffff;
+    flex-direction: column;
+    justify-content: space-around;
+    clip-path: circle(100px at 90% -15%);
+    pointer-events: none;
+    transition: 1s ease-out;
+    }
+    nav.active .nav-links{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .bx-menu{
+        cursor: pointer;
+        z-index: 1;
+    }
+    .bxs-user{
+    color: #ED1B24;
+    }
+    .navbar-inner{
+        justify-content: space-between;
+    }
 }

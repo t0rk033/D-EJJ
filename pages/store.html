@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja</title>
     <link rel="stylesheet" href="../css/store.css">
+
     <link rel="shortcut icon" href="../img/faviconBranco.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +15,13 @@
         rel="stylesheet">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script defer src="../js/scrit.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="navbar-inner">
+        <nav class="navbar-inner">
             <ul class="nav-links">
                 <img src="../img/logo.png" alt="Logo" class="logo">
                 <li><a href="../index.html">Home</a></li>
@@ -30,17 +33,21 @@
             <i class='bx bx-menu' ></i>
             <img src="../img/logo.png" alt="Logo" class="logo-cel">
             <i class='bx bxs-user'></i>
-        </div>
+        </nav>
     </header>
     <div class="container">
         <main>
+            <div class="find">
+                <input type="text" name="find" id="find" placeholder="O que você procura?">
+            </div>
             <div class="cards-inner">
                 <div class="card">
                     <img src="../img/kimono-example.webp" alt="...">
                     <div class="description">
                         <h3>Kimono Preto</h3>
                         <p>kimono koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span></p>
                     </div>
                 </div>
                 <div class="card">
@@ -48,7 +55,8 @@
                     <div class="description">
                         <h3>Bermuda</h3>
                         <p>Bermuda koral</p>
-                        <p>R$: 175,00</p>
+                        <p class="price">R$: 175,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -56,7 +64,8 @@
                     <div class="description">
                         <h3>Bermuda</h3>
                         <p>Bermuda Atakama</p>
-                        <p>R$: 132,90</p>
+                        <p class="price">R$: 132,90</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -64,7 +73,8 @@
                     <div class="description">
                         <h3>Hash Guard</h3>
                         <p>Hash Guard Koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -72,7 +82,8 @@
                     <div class="description">
                         <h3>Kimono Preto</h3>
                         <p>kimono koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -80,7 +91,8 @@
                     <div class="description">
                         <h3>Kimono Preto</h3>
                         <p>kimono koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -88,7 +100,8 @@
                     <div class="description">
                         <h3>Kimono Preto</h3>
                         <p>kimono koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -96,7 +109,8 @@
                     <div class="description">
                         <h3>Kimono Preto</h3>
                         <p>kimono koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -104,7 +118,8 @@
                     <div class="description">
                         <h3>Kimono Preto</h3>
                         <p>kimono koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -112,7 +127,8 @@
                     <div class="description">
                         <h3>Kimono Preto</h3>
                         <p>kimono koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -120,7 +136,8 @@
                     <div class="description">
                         <h3>Kimono Preto</h3>
                         <p>kimono koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
                 <div class="card">
@@ -128,7 +145,8 @@
                     <div class="description">
                         <h3>Kimono Preto</h3>
                         <p>kimono koral</p>
-                        <p>R$: 235,00</p>
+                        <p class="price">R$: 235,00</p>
+                        <p>Em <span>até 12x sem juros</span>
                     </div>
                 </div>
             </div>

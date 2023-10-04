@@ -113,9 +113,6 @@ h1{
     
 }
 @media (max-width: 450px){
-header{
-display: none;
-}
     h1{
 font-size: 28px;
 }
@@ -128,4 +125,34 @@ display: none;
 body{
 background-size: cover;
 }
+.btn-login{
+    display: none;
+}
+.nav-links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffff;
+    flex-direction: column;
+    justify-content: space-around;
+    clip-path: circle(100px at 90% -15%);
+    pointer-events: none;
+    transition: 1s ease-out;
+    }
+    nav.active .nav-links{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .bx-menu{
+        cursor: pointer;
+        z-index: 1;
+    }
+    .navbar-inner{
+        justify-content: space-between;
+    }
+    i{
+        font-size: 28px;
+        }
 }
