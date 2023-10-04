@@ -46,6 +46,9 @@
     .btn-login:hover{
         background-color: #ed1b2696;
     }
+    .navbar-inner i{
+        display: none;
+    }
     /*main style*/
     @media(min-width:500px){
         main{
@@ -87,6 +90,9 @@
     main{
         text-align: justify;
     padding: 30px;
+    }
+    .navbar-inner i{
+        display: block;
     }
     section{
     display: flex;

@@ -5,7 +5,7 @@
     font-family: Poppins;
 }
 body{
-background-color: #f8f6f6;
+background-color: #ffff;
 }
 ul{
     list-style: none;
@@ -25,7 +25,7 @@ ul{
 display: flex;
 align-items: center;
 justify-content: space-around;
-padding: 20px;
+padding: 0px;
 box-shadow: 2px 2px 4px rgba(151, 150, 150, 0.257);
 margin-bottom: 80px;
 }
@@ -52,11 +52,11 @@ width: 8%;
 }
 /* cards style*/
 .card{
-width: 350px;
-height: 450px;
+width: 200px;
+height: 300px;
 }
 .card img{
-width: 350px;
+width: 200px;
 }
 .cards-inner{
 display: grid;
@@ -64,9 +64,31 @@ grid-template-columns: repeat(4, 0.1fr);
 justify-content: center;
 gap: 50px;
 }
+.navbar-inner i{
+    display: none;
+}
+.logo-cel{
+    display: none;
+}
+#find, .find{
+    text-align: center;
+}
+#find{
+    width: 450px;
+    margin-bottom: 40px;
+    border-radius: 26px;
+    border: 1px solid #ed1b2683;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.247);
+}
 @media(max-width: 450px){
 main{
 padding: 0px;
+}
+.logo-cel{
+    display: block;
+}
+.navbar-inner i{
+    display: block;
 }
 .nav-links{
     position: fixed;
