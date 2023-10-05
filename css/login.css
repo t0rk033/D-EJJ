@@ -61,6 +61,8 @@ width: 150px;
 }
 .test{
     display: flex;
+   
+    justify-content: center;
     
 }
 label{
@@ -88,7 +90,7 @@ align-items: center;
 justify-content: space-around;
 padding: 20px;
 box-shadow: 2px 2px 4px rgba(151, 150, 150, 0.257);
-margin-bottom: 140px;
+margin-bottom: 50px;
 width: 100vw;
 
 }
